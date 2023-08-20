@@ -16,4 +16,6 @@ Projeto de um play de música
 
 ![Play 4](/assets/imgs/musicarbd.png)
 
+## Demonstração de play 
+
 ![project gif](/assets/musicajb.gif)
