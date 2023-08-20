@@ -15,7 +15,3 @@ Projeto de um play de música
 ![Play 3](/assets/imgs/musicaharu.png)
 
 ![Play 4](/assets/imgs/musicarbd.png)
-<<<<<<< HEAD
-=======
-
->>>>>>> 2005895c095ce37eb3634699da074fd60147f61f
