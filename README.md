@@ -17,7 +17,3 @@ Projeto de um play de música
 ![Play 4](/assets/imgs/musicarbd.png)
 
 ## Demonstração
-
-<p>
-  <img src="/assets/project.gif" alt="">
-</p>
