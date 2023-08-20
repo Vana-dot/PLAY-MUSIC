@@ -15,7 +15,3 @@ Projeto de um play de música
 ![Play 3](/assets/imgs/musicaharu.png)
 
 ![Play 4](/assets/imgs/musicarbd.png)
-
-## Demonstração
-
-![Project gif](/assets/project.gif)
