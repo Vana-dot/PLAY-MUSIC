@@ -18,4 +18,4 @@ Projeto de um play de música
 
 ## Demonstração
 
-[Project gif](/assets/project.gif)
+![Project gif](/assets/project.gif)
