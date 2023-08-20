@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+    background: #0F0D13;
+    border-radius: 8px 8px 0px 0px;
+    color: #E1E1E6;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38.4119px;
+    gap: 20.81px;
+    position: absolute;
+    width: 266.48px;
+    height: 498px;
+    top: 55px;
+    background: #2A2141;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9.60297px;
+    
+}
+img{
+    width: 189.66px;
+    height: 189.66px;
+    background: url(hans-eiskonen-8Pm_A-OHJGg-unsplash);
+    border-radius: 15px;
+    padding-top:1rem;
+}
+h2{
+    width: 171px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24.0074px;
+}
+p{
+    display: flex;
+    font-size:18px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 155px;
+    height: 19px;
+    opacity: 0.67;
+
+
+}
+.controls-progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 50.42px;
+    width: 189.66px;
+    height: 28.81px;
+}
+
+.progress_barra{
+  width: 200px;
+  height: 6px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color:#6A7377;
+  border-radius: 2rem;
+}
+.progress_barra::-moz-progress-bar{
+    background-color: #d9d9d9;
+  }
+
+.time{
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    gap:110px;
+    width: 189.66px;
+    height: 28.81px;
+}
