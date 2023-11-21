@@ -1,7 +1,9 @@
 # Play de música
 
 Projeto de um play de música 
-desenvolvido com HTML,CSS e Js
+desenvolvido com HTML,CSS e JS
+
+Obs:O play da música foi desenvolvido com js puro
 
 ## Screenshots
 
