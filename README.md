@@ -1,6 +1,9 @@
 # Play de música
 
-Projeto de um play de música
+Projeto de um play de música 
+desenvolvido com HTML,CSS e JS
+
+Obs:O play da música foi desenvolvido com js puro
 
 ## Screenshots
 
@@ -16,6 +19,8 @@ Projeto de um play de música
 
 ![Play 4](/assets/imgs/musicarbd.png)
 
-## Demonstração de play 
+## Demonstração de play
+
+Aqui foi adicionado um gif pra demostrar como será as próximas músicas
 
 ![project gif](/assets/musicajb.gif)
