@@ -3,7 +3,9 @@ window.onload = function() {
    updateTime()
 }
 
-var audio = document.getElementById("toPlay");
+// Objeto com todos as informações da musica
+
+let audio = document.getElementById("toPlay");
 audio.musicToPlay = {
     music_one:{
         nameArtist:"Justin bieber",
@@ -32,16 +34,18 @@ audio.musicToPlay = {
 }
 
 
-var imageBack  = document.getElementById("demo");
-var songToday_artist = document.querySelector(".songArtistToday");
-var songToday = document.querySelector(".songToday");
+let imageBack  = document.getElementById("demo");
+let songToday_artist = document.querySelector(".songArtistToday");
+let songToday = document.querySelector(".songToday");
 
-var currentSongIndex = 0; 
+let currentSongIndex = 0; 
+
+// Direção das musicas
 
 function musicPlay(direction) {
-  var musicaEscolhida;
-  var keys = Object.keys(audio.musicToPlay); 
-  var numSongs = keys.length; 
+  let musicaEscolhida;
+  let keys = Object.keys(audio.musicToPlay); 
+  let numSongs = keys.length; 
   switch (direction) {
     case "next":
       currentSongIndex = (currentSongIndex + 1) % numSongs;
@@ -54,7 +58,9 @@ function musicPlay(direction) {
       break;
   }
   
-  var currentSongKey = keys[currentSongIndex]; 
+// Mostrar as informações da musica e o play
+
+  let currentSongKey = keys[currentSongIndex]; 
   musicaEscolhida = audio.musicToPlay[currentSongKey];
   imageBack.innerHTML = '<img src="' + audio.musicToPlay[currentSongKey].imageBack + '">';
   songToday.innerHTML = audio.musicToPlay[currentSongKey].nameSong;
@@ -64,12 +70,14 @@ function musicPlay(direction) {
   
 }
 
-var nextButton = document.getElementById("nextButton");
+// Adicionar o button
+
+let nextButton = document.getElementById("nextButton");
 nextButton.addEventListener("click", function() {
   musicPlay("next");
 });
 
-var prevButton = document.getElementById("prevButton");
+let prevButton = document.getElementById("prevButton");
 prevButton.addEventListener("click", function() {
   musicPlay("prev"); 
 });
@@ -79,13 +87,15 @@ prevButton.addEventListener("click", function() {
 
 //---------------------------------------------------------------
 
-var progressBar = document.querySelector("#barra_progress");
+// Barra de progresso
 
-var calculateValue = () => {
+let progressBar = document.querySelector("#barra_progress");
+
+let calculateValue = () => {
   return 0.5;
 
 }
-var value = calculateValue();
+let value = calculateValue();
 
   if (isFinite(value) && !isNaN(value) && value >= 0 && value <= 1) {
     progressBar.value = value;
@@ -97,12 +107,14 @@ calculateValue();
 
 
 progressBar.addEventListener("click", function(event) {
-  var newTime = event.offsetX / this.offsetWidth * audio.duration;
+  let newTime = event.offsetX / this.offsetWidth * audio.duration;
   audio.currentTime = newTime;
 });
 
 
 //---------------------------------------------------------------------
+
+// Atualiza a barra de progresso
 
 function updateProgress() {
   if (!audio.paused && audio.duration > 0) {
@@ -118,10 +130,11 @@ audio.addEventListener("canplaythrough", function() {
   updateTime();
 });
 
+// contagem do tempo de cada musica
 
 function toMinutesAndSeconds(time) {
-  var minutes = Math.floor(time / 60);
-  var seconds = Math.floor(time % 60);
+  let minutes = Math.floor(time / 60);
+  let seconds = Math.floor(time % 60);
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
@@ -133,24 +146,27 @@ function toMinutesAndSeconds(time) {
 
 
 
-var currentTime = document.querySelector(".current-time");
-var duration = document.querySelector(".duration");
+let currentTime = document.querySelector(".current-time");
+let duration = document.querySelector(".duration");
 
-
+// Atualizar o tempo
 function updateTime() {
   currentTime.textContent = toMinutesAndSeconds(audio.currentTime);
   duration.textContent = toMinutesAndSeconds(audio.duration);
 }
 
+// Mostrar o progresso e tempo da musica
 
 audio.addEventListener("timeupdate", function() {
   updateProgress();
   updateTime();
 });
 
-var currentTimeValue = 0;
-var playPause = document.getElementById("buttonPause");
-var playButton = document.getElementById("buttonPlay");
+let currentTimeValue = 0;
+let playPause = document.getElementById("buttonPause");
+let playButton = document.getElementById("buttonPlay");
+
+// Função pra pausar musica
 
 function musicPause() {
   if(audio.paused) {
