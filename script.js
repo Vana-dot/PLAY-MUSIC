@@ -3,6 +3,8 @@ window.onload = function() {
    updateTime()
 }
 
+let currentTime = document.querySelector(".current-time");
+let duration = document.querySelector(".duration");
 // Objeto com todos as informações da musica
 
 let audio = document.getElementById("toPlay");
@@ -144,10 +146,6 @@ function toMinutesAndSeconds(time) {
   return minutes + ":" + seconds;
 }
 
-
-
-let currentTime = document.querySelector(".current-time");
-let duration = document.querySelector(".duration");
 
 // Atualizar o tempo
 function updateTime() {
